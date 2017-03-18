@@ -7,5 +7,5 @@ package pl.potera.helloworld;
 public interface CountBmi {
     boolean isMassValid(float mass);
     boolean isHeightValid(float height);
-    float countBmi(float mass, float height);
+    float countBmi(float mass, float height) throws IllegalArgumentException;
 }
