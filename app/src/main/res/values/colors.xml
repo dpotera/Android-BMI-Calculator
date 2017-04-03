@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="bmi_red">#da1b22</color>
+    <color name="bmi_green">#21af17</color>
+    <color name="bmi_yellow">#b6ae12</color>
 </resources>

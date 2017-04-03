@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">BMI Calculator</string>
-    <string name="weight">Weight [kg]</string>
+    <string name="weight">Weight</string>
     <string name="height">Height [Meters]</string>
     <string name="calculate_bmi">Calculate BMI</string>
     <string name="bmi_result_title">BMI: %f</string>
+    <string name="weight_toggle_buton_label">Weight units:</string>
+    <string name="unit_kg">KG</string>
+    <string name="unit_lb">LB</string>
+    <string name="your_bmi">Your bmi:</string>
 </resources>
