@@ -102,9 +102,15 @@ public class MainActivity extends AppCompatActivity implements BmiMainActivity {
                 menuActionShare();
                 break;
             case R.id.action_about:
+                openAboutActivity();
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void openAboutActivity(){
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
     }
 
     private void menuActionShare(){

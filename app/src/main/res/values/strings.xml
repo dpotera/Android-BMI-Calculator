@@ -14,4 +14,11 @@
     <string name="save">Save</string>
     <string name="about">About</string>
     <string name="share">Share</string>
+    <string name="about_text">
+        App Name: Bmi Calculator\n
+        Author: Dominik Potera\n
+        Description:\n
+        Application is designed to count your bmi.\n
+        It\'s also gives you feedback about your results.
+    </string>
 </resources>
