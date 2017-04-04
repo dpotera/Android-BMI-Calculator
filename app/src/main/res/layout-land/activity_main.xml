@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.potera.bmiapp.MainActivity">
+
+    <TextView
+        android:id="@+id/weight_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/input_weight"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/input_weight"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="@string/weight"
+        tools:text="@string/weight" />
+
+    <EditText
+        android:id="@+id/input_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/switch1"
+        android:layout_toEndOf="@+id/weight_text" />
+
+    <ToggleButton
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="@string/unit_kg"
+        android:textOn="@string/unit_lb"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/input_weight" />
+
+    <TextView
+        android:id="@+id/height_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/input_height"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/weight_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/input_weight"
+        android:gravity="center"
+        android:text="@string/height" />
+
+    <EditText
+        android:id="@+id/input_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/input_weight"
+        android:layout_alignStart="@+id/input_weight" />
+
+    <Button
+        android:id="@+id/calculate"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/input_height"
+        android:layout_below="@+id/height_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="26dp"
+        android:layout_toStartOf="@+id/input_height"
+        android:background="@color/colorPrimary"
+        android:elevation="0dp"
+        android:text="@string/calculate_bmi"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/bmi_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display4" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/weight_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/weight_text"
+        android:layout_toStartOf="@+id/switch1"
+        android:text="@string/weight_toggle_buton_label"
+        android:gravity="center_vertical"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/input_weight"
+        android:text="@string/your_bmi"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+</RelativeLayout>
