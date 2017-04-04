@@ -1,10 +1,9 @@
-package pl.potera.helloworld.bmi;
+package pl.potera.bmiapp.bmi;
 
 import java.text.DecimalFormat;
 
-import butterknife.ButterKnife;
 import lombok.Getter;
-import lombok.Setter;;
+import lombok.Setter;
 
 public class BmiResult {
     private static double UNDERWEIGHT = 18.5f;
@@ -22,7 +21,6 @@ public class BmiResult {
     public BmiResult(double bmi) {
         this.bmi = bmi;
         this.status = rateBmi(bmi);
-        System.out.println("############## COLOR: "+color);
     }
 
     private static BmiStatus rateBmi(double bmi){
@@ -34,6 +32,20 @@ public class BmiResult {
             return BmiStatus.OVERWEIGHT;
         } else {
             return BmiStatus.OBESITY;
+        }
+    }
+
+    public String getResultMessage(){
+        return "My BMI is: "+toString()+". "+getStatusMessage();
+    }
+
+    private String getStatusMessage(){
+        switch (status){
+            case NORMAL: return "I'm normal! :)";
+            case UNDERWEIGHT: return "I'm thin :|";
+            case OVERWEIGHT: return "I need diet :|";
+            case OBESITY: return "I'm very fat! :(";
+            default: return "";
         }
     }
 

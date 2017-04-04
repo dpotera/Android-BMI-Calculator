@@ -1,4 +1,4 @@
-package pl.potera.helloworld;
+package pl.potera.bmiapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

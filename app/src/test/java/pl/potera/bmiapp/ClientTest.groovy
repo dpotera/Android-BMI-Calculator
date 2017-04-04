@@ -1,4 +1,4 @@
-package pl.potera.helloworld
+package pl.potera.bmiapp
 
 import spock.lang.Specification
 import spock.lang.Subject

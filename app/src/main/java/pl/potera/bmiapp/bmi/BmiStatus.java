@@ -1,4 +1,4 @@
-package pl.potera.helloworld.bmi;
+package pl.potera.bmiapp.bmi;
 
 public enum BmiStatus {
     UNDERWEIGHT,

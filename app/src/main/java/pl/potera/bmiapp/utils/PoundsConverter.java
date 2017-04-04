@@ -1,4 +1,4 @@
-package pl.potera.helloworld.utils;
+package pl.potera.bmiapp.utils;
 
 public class PoundsConverter {
     private static final double CONVERT_KG = 0.45359237f;

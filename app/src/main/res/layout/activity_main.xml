@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="pl.potera.helloworld.MainActivity">
+    tools:context="pl.potera.bmiapp.MainActivity">
 
     <TextView
         android:id="@+id/weight_text"
@@ -70,13 +70,16 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/height_text"
-        android:text="@string/calculate_bmi"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_alignParentStart="true" />
+        android:background="@color/colorPrimary"
+        android:elevation="0dp"
+        android:text="@string/calculate_bmi"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/bmi_result"

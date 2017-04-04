@@ -1,8 +1,4 @@
-package pl.potera.helloworld.bmi;
-
-/**
- * Created by dominik on 31.03.17.
- */
+package pl.potera.bmiapp.bmi;
 
 public class BmiCalculator {
     private static final double MIN_MASS = 10;
