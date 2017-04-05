@@ -28,11 +28,11 @@
         android:layout_marginRight="10dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:layout_below="@+id/switch1"
+        android:layout_below="@+id/weight_switch"
         android:layout_toEndOf="@+id/weight_text" />
 
     <ToggleButton
-        android:id="@+id/switch1"
+        android:id="@+id/weight_switch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textOff="@string/unit_kg"
@@ -99,7 +99,7 @@
         android:layout_above="@+id/weight_text"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/weight_text"
-        android:layout_toStartOf="@+id/switch1"
+        android:layout_toStartOf="@+id/weight_switch"
         android:text="@string/weight_toggle_buton_label"
         android:gravity="center_vertical"
         android:textAlignment="textEnd" />

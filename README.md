@@ -1,7 +1,7 @@
 # Android-BMI-Calculator
                                                                       done?
   
-	UI Tests -> Espresso, <Optional: {Appium, Robotium}>                ✖
+	UI Tests -> Espresso, <Optional: {Appium, Robotium}>                ✔
 
 	ButterKnife                                                         ✔
 

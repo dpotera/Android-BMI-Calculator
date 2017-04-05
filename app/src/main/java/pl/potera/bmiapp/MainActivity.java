@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements BmiMainActivity {
     EditText inputWeight;
     @BindView(R.id.bmi_result)
     TextView bmiResult;
-    @BindView(R.id.switch1)
+    @BindView(R.id.weight_switch)
     ToggleButton weightToggleButton;
 
     @BindColor(R.color.bmi_green)
